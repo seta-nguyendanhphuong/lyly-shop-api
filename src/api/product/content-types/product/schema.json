@@ -34,13 +34,18 @@
       "type": "text"
     },
     "productRentalPrice": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
     },
     "productRetailPrice": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
     },
-    "productCategory": {
-      "type": "string"
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "products"
     }
   }
 }
