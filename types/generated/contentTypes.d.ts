@@ -563,6 +563,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
 export interface ApiProductProduct extends Struct.CollectionTypeSchema {
   collectionName: 'products';
   info: {
+    description: '';
     displayName: 'Product';
     pluralName: 'products';
     singularName: 'product';
@@ -581,6 +582,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     name: Schema.Attribute.String;
+    productCategory: Schema.Attribute.String;
     productDescription: Schema.Attribute.Text;
     productImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
