@@ -1,6 +1,11 @@
 # 🚀 Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+## `node version`
+node >= version 22
+
+### `import data`
+npm run strapi import -- -f /path/to/my/file/export_20221213105643.tar.gz.enc
 
 ### `develop`
 
